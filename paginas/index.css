@@ -1,0 +1,73 @@
+
+.container {
+    flex-grow: 1;
+}
+.container h1, .container p {
+    color: #f0f0f0;
+}
+.btn-primary, .btn-success {
+    border-radius: 30px;
+}
+.btn-primary {
+    background-color: #1d3557;
+    border-color: #1d3557;
+}
+.btn-success {
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
+}
+footer {
+    background-color: #1d1d1d;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes y el botón flotante */
+.image-container {
+    position: relative;
+    margin: 15px auto;
+    text-align: center;
+    width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.image-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-container:hover button {
+    display: block;
+}
+
+/* Centrar todo */
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-row .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+.modal-body{
+    color: #000;
+}
+.modal-header{
+    color: #000;
+}
