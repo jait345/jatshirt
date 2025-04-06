@@ -1,0 +1,20 @@
+
+html, body {
+    height: 100%; /* Asegura que html y body ocupen todo el alto del viewport */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto; /* La primera fila es el contenido, la segunda el footer */
+}
+
+footer {
+    background-color: #001b29;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+

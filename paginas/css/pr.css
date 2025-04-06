@@ -1,0 +1,280 @@
+body {
+    background-color: gray;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700; /* Negrita */
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300; /* Ligero */
+}
+
+
+#content {
+    margin-top: 30px;
+}
+
+
+/* Efecto de perfil circular */
+.perfil {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #007bff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones animados */
+.btn {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+/* Barra de búsqueda */
+.form-control-lg {
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #17a2b8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control-lg::placeholder {
+    font-style: italic;
+    color: #999;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.video-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px; /* Ancho fijo para las tarjetas de video */
+    transition: box-shadow 0.3s; /* Sombra al pasar el mouse */
+    float: left; /* Alineación en varias columnas */
+}
+
+.video-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.video {
+    width: 300px; /* Ancho fijo para los videos */
+    height: 200px; /* Alto fijo para los videos */
+}
+
+.video-title {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center; /* Centra el título del video */
+}
+
+.music-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 320px; /* Ancho fijo para las tarjetas de música e imágenes */
+    transition: box-shadow 0.3s; /* Sombra al pasar el mouse */
+    float: left; /* Alineación en varias columnas */
+}
+
+.music-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.music-title, .image-container p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.image-container {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.media {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Mantener la relación de aspecto */
+    transition: transform 0.2s; /* Efecto de zoom al pasar el mouse */
+}
+
+.media:hover {
+    transform: scale(1.1); /* Escala la imagen */
+}
+
+.image-container a {
+    display: block;
+    text-decoration: none;
+    color: black; /* Color del texto para el enlace */
+}
+
+.image-container a:hover .media {
+    opacity: 0.7; /* Opacidad cuando se pasa el mouse */
+}
+
+.image-container p {
+    margin: 0;
+}
+
+
+
+
+
+
+.custom-link {
+    text-decoration: none; /* Eliminar subrayado */
+    color: blanchedalmond; /* Cambiar color del texto */
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s, transform 0.3s; /* Añadir animación de transición */
+}
+
+/* Efecto al pasar el ratón */
+.custom-link:hover {
+    color: #3498db; /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Pequeño zoom */
+}
+
+
+
+
+
+.user-info {
+    position: relative; /* Permite el posicionamiento absoluto del botón */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.user-info p {
+    margin: 0; /* Elimina márgenes en el párrafo */
+    color: white; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de fuente */
+}
+
+.btn-logout {
+    position: absolute; /* Posiciona el botón en la esquina superior derecha */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    padding: 10px 15px; /* Espaciado del botón */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-logout:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo base */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Modo Normal */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Modo Descanso */
+.relax-mode {
+    background-color: #f5e8c7;
+    color: #4b4b4b;
+}
+
+
+
+/* Jesus Adrian Ibarra Tiscareño*/

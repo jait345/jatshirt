@@ -1,0 +1,20 @@
+[14-Mar-2025 06:21:49 Europe/Berlin] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'verification_code' in 'field list'
+[14-Mar-2025 06:21:49 Europe/Berlin] Registration error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'verification_code' in 'field list'
+[14-Mar-2025 06:36:46 Europe/Berlin] Error en registro: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'verification_code' in 'field list'
+[14-Mar-2025 06:36:46 Europe/Berlin] Error en registro: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'verification_code' in 'field list'
+[14-Mar-2025 06:38:45 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: There is no active transaction in C:\xampp2\htdocs\JAT-SHIRT 2.0\paginas\register.php:101
+Stack trace:
+#0 C:\xampp2\htdocs\JAT-SHIRT 2.0\paginas\register.php(101): PDO->rollBack()
+#1 {main}
+  thrown in C:\xampp2\htdocs\JAT-SHIRT 2.0\paginas\register.php on line 101
+[14-Mar-2025 06:38:46 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:39:13 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:39:13 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:16 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:17 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:19 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:20 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:54 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:56 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
+[14-Mar-2025 06:40:56 Europe/Berlin] Error en base de datos: SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction
+[14-Mar-2025 06:40:57 Europe/Berlin] Error en registro: SMTP Error: Could not authenticate.
