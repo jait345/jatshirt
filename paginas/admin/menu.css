@@ -1,0 +1,53 @@
+.custom-link {
+    text-decoration: none; /* Eliminar subrayado */
+    color: blanchedalmond; /* Cambiar color del texto */
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s, transform 0.3s; /* Añadir animación de transición */
+}
+
+/* Efecto al pasar el ratón */
+.custom-link:hover {
+    color: #3498db; /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Pequeño zoom */
+}
+
+/* Estilos específicos para celulares (pantallas más pequeñas) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        top: 5%;
+        padding: 15px;
+    }
+
+    .form-box h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box {
+        height: 45px;
+    }
+
+    .input-box input {
+        font-size: 0.9em;
+    }
+
+    .bth {
+        font-size: 0.9em;
+    }
+
+    .custom-link {
+        font-size: 20px;
+    }
+}
